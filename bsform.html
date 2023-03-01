@@ -1,0 +1,59 @@
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    .form-group,dropdown {
+      margin: 10px 0;
+      bg-colour:red;
+    }
+  </style>
+  <title>My Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <h3> Register Form:</h3>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" required><br><br>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" required><br>
+      </div>
+      <div class="form-group">
+         <label for="dob">D.O.B:</label>
+         <input type="numbers" id="dob" placeholder="dd/mm/yy" required><br><br>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel"  id="phone" required><br><br>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender:</label><br>
+        <input type="radio" name="gender" value="male" required> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br><br>
+
+      </div>
+       <div class="form-group">
+        <label for="interests">Hobby:</label><br>
+        <input type="checkbox" name="interests" value="sports"> Playing cricket<br><br>
+        <input type="checkbox" name="interests" value="music">Listening to Music<br><br>
+        <input type="checkbox" name="interests" value="travel">Watching TV<br><br>
+        <input type="checkbox" name="interests" value="reading"> Reading books<br><br>
+      </div>
+      <div class="form-group">
+        <label for="address">Ressidential Address:</label>
+        <textarea class="form-control" id="address" rows="10"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
